@@ -23,5 +23,7 @@ At the moment, you can get the:
 # About me
 
 Email me: [aaron@aaronfoltz.com](mailto:aaron@aaronfoltz.com)
+
 Follow me: [@Aaron_Foltz](http://twitter.com/Aaron_Foltz)
+
 Visit me: [Aaron Foltz](http://www.aaronfoltz.com)
