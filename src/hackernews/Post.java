@@ -8,7 +8,7 @@ public class Post {
 
 	int	rank, score, comments;
 
-	String	title, url, user, userURL, commentsURL;
+	String	title, url, user, userURL, commentsURL, timeAgo;
 
 	public int getComments() {
 
@@ -28,6 +28,11 @@ public class Post {
 	public int getScore() {
 
 		return score;
+	}
+
+	public String getTimeAgo() {
+
+		return timeAgo;
 	}
 
 	public String getTitle() {
@@ -91,6 +96,17 @@ public class Post {
 
 	}
 
+	public void setTimeAgo(String timeAgoString) {
+
+		Pattern p = Pattern.compile("(\\d+\\s[a-zA-Z]+\\sago)");
+		Matcher m = p.matcher(timeAgoString);
+
+		if (m.find()) {
+			// Parse the time ago from the string
+			this.timeAgo = m.group(1);
+		}
+	}
+
 	public void setTitle(String title) {
 
 		this.title = title;
@@ -118,6 +134,6 @@ public class Post {
 
 		return getRank() + "\t" + getTitle() + "\t" + getUrl() + "\t"
 				+ getScore() + "\t" + getUser() + "\t" + getUserURL() + "\t"
-				+ getComments() + "\t" + getCommentsURL();
+				+ getComments() + "\t" + getCommentsURL() + "\t" + getTimeAgo();
 	}
 }
