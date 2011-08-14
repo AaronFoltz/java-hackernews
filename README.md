@@ -8,16 +8,16 @@ Java Wrapper API for HackerNews
 ### Gather information on those posts
 	posts[1].getTitle();
 
-	At the moment, you can get the:
-	* Rank
-	* Title
-	* Link URL
-	* Points
-	* User
-	* User Profile URL
-	* Posted Time
-	* Number of comments
-	* Comment URL
+At the moment, you can get the:
+* Rank
+* Title
+* Link URL
+* Points
+* User
+* User Profile URL
+* Posted Time
+* Number of comments
+* Comment URL
 	
 # About me
 
