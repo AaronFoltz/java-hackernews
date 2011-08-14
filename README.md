@@ -9,6 +9,7 @@ Java Wrapper API for HackerNews
 	posts[1].getTitle();
 
 At the moment, you can get the:
+
 * Rank
 * Title
 * Link URL
